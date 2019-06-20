@@ -3,6 +3,7 @@
 #include <cstdint>
 #include <string>
 #include <future>
+#include <thread>
 
 #include "StopWatch_II.h"
 
@@ -74,6 +75,8 @@ int main() {
 			KillProcess();
 			std::cout << "ƒƒ“II" << std::endl;
 		}
+
+		std::this_thread::sleep_for(std::chrono::milliseconds(16));
 	}
 
 	std::cout << "Dog go to Sleep..."<<std::endl;
